@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit';
+    font-size: 16px;
+
+}
+.main-div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin:5% auto;
+    background-color: white;
+    border-radius: 15px;
+}
+.description{
+    padding: 0 32px 32px 32px;
+}
+.image{
+    padding: 32px;
+    padding-bottom: 0;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    
+}
+h1{
+    font-family: 'Young Serif';
+    font-weight: 400;
+}
+p{
+    font-size: 16px;
+}
+
+.prepTime{
+    background-color: hsla(332, 100%, 69%, 0.116);
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+.prepTime>h3{
+    padding-left: 15px;
+    color: hsl(332, 51%, 32%);
+}
+.prepTime ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+li{
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif';
+    font-weight: 500;
+}
+.Ingredients,.Instructions{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+.Ingredients ul li::marker, .Instructions ol li::marker,td:nth-child(even){
+    color: hsl(14, 45%, 36%);
+}
+.Ingredients ul, .Instructions ol{
+    padding-left: 26px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+tr:not(:last-child){
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+td{
+    padding: 10px 15px;
+}
+
+
+@media screen and (max-width:600px)  {
+    .main-div{
+        width: 100%;
+        margin: 0;
+    }
+    .image{
+        padding: 0;
+    }
+    img{
+        border-radius: 0;
+    }
+}
