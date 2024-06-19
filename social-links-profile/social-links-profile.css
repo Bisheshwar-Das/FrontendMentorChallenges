@@ -1,3 +1,57 @@
+@font-face {
+    font-family: mystaticfont;
+    src: url(social-links-profile-main/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
 body{
-    background-color: black;
+    background-color: hsl(0, 0%, 8%);
+    color: rgb(204, 204, 204);
+}
+.profileCard{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 12%);
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    position: fixed;
+    inset: 0;
+    align-items: center;
+    padding: 32px;
+    border-radius: 15px;
+}
+img{
+    border-radius: 50%;
+    width: 25%;
+}
+h2{
+    font-family: mystaticfont;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+p{
+    margin: 0;
+    font-family: mystaticfont;
+    color: hsl(75, 94%, 57%);
+    font-size: 14px;
+    padding-bottom: 16px;
+}
+q{
+    font-size: 14px;
+    padding: 16px;
+}
+button{
+    color: rgb(204, 204, 204);
+    width: 100%;
+    padding: 12px;
+    margin: 8px;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color:hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
 }
