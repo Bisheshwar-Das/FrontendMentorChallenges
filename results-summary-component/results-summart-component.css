@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family:  "Hanken Grotesk", sans-serif;
+}
+.container{
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    height: 350px;
+    inset: 0;
+    position: fixed;
+    box-shadow: 8px 8px 16px 6px hsl(221, 100%, 96%);
+    border-radius: 15px;
+    display: flex;
+}
+.result{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.result>h4{
+    color: rgb(221, 219, 219);
+}
+.percentage{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsl(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.percentage>h1{
+    font-weight: bolder;
+    margin: 0;
+    font-size: 45px;
+}
+.percentage>p{
+    margin: 0;
+}
+p{
+    color: rgb(190, 190, 190);
+    font-size: 12px;
+}
+.analysis{
+    padding: 0 40px;
+    text-align: center;
+}
+.summary{
+    padding: 16px 32px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.summary>h4{
+    margin: 0;
+    margin-bottom: 12px;
+}
+.summary>div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+.summary>div>div>img{
+    height: 16px;
+}
+.summary>div>div>h5{
+    padding-left: 5px;
+    margin: 0;
+}
+.summary>div>div{
+    align-items: center;
+    margin: 0;
+    display: flex;
+}
+
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+.memory{
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+.reaction>div>h5{
+    margin: 0;
+    color: hsl(0, 100%, 67%);
+}
+.memory>div>h5{
+    margin: 0;
+    color: hsl(39, 100%, 56%);
+}
+.verbal>div>h5{
+    margin: 0;
+    color: hsl(166, 100%, 37%);
+}
+.visual>div>h5{
+    margin: 0;
+    color: hsl(234, 85%, 45%);
+}
+button{
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 28px;
+    padding: 12px;
+    color: white;
+    border: none;
+    margin-top: 12px;
+}
+button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.marks{
+    font-weight: bolder;
+    color: hsl(224, 30%, 27%);
+}
+.marks::after{
+    content: "\00a0";
+}
