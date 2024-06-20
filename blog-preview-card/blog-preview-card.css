@@ -16,10 +16,13 @@ body{
     box-shadow: 8px 8px black;
 }
 .cover{
+    height: 45%;
     width: 100%;
+    object-fit: cover;
     border-radius: 16px;
     margin-bottom: 24px;
 }
+
 .button{
     background-color: hsl(47, 88%, 63%);
     padding: 6px 12px;
@@ -27,7 +30,7 @@ body{
 
 }
 .date{
-    margin-top: 24px;
+    margin-top: 20px;
     font-size: 14px;   
     font-weight: bold;
 }
@@ -40,9 +43,16 @@ h2{
 .profile{
     display: flex;
     align-items: center;
-    margin: 24px 0;
+    margin: 20px 0;
 }
 .avatar{
     width: 32px;
     margin-right: 16px;
+}
+
+@media screen and (max-width:480px) {
+    .card{
+        width:300px;
+    }
+    
 }
