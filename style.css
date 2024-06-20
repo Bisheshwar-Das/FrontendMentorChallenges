@@ -28,7 +28,6 @@ img{
 }
 img:hover{
     transform: scale(1.05);
-    z-index: 0;
 }
 .description{
     padding: 16px;
