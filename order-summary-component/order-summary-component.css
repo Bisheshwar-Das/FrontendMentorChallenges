@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(225, 100%, 94%, 0.829);
+    font-family: "Red Hat Display", sans-serif;
+}
+#bg-illustration{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: -1;
+}
+section{
+    background-color: hsl(225, 100%, 98%);
+    height: 650px;
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    box-shadow:0px 5px 32px  hsla(223, 47%, 23%, 0.253);
+}
+#cover-image{
+    width: 100%;
+    height: 35%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+#order-summary{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+#order-summary>h2{
+    font-weight: 900;
+}
+
+#order-summary>p{
+    text-align: center;
+    padding-top:6px ;
+}
+
+#plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    background-color: hsla(224, 23%, 55%, 0.08);
+    border-radius: 8px;
+}
+#plan-left{
+    display: flex;
+    align-items: center;
+}
+#plan-left>img{
+    padding-right: 16px;
+}
+#plan-mid>h4{
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 4px;
+
+}
+#plan-right{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+
+/* Buttons */
+button{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    margin: 6px;
+}
+#button-1{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px hsla(245, 75%, 52%, 0.438);
+}
+#button-2{
+    font-size:14px;
+    font-weight: bold;
+    background-color: transparent;
+    color: hsl(223, 47%, 23%,.7);
+}
+
+/*Hover states*/
+#button-1:hover{
+    background-color: hsl(245, 75%, 52%,0.7);
+    cursor: pointer;
+}
+#button-2:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+#plan-right:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(245, 75%, 52%,0.7);
+}
