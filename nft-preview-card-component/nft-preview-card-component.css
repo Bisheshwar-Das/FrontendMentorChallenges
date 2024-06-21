@@ -22,11 +22,34 @@ section{
     box-shadow: 2px 2px 12px hsl(215, 100%, 10%) ;
     justify-content: space-between;
 }
+
+
+.image{
+    position: relative;
+}
 #item-image{
     height: 50%;
-    object-fit: cover;
-    border-radius: 8px;
 }
+#item-image-main{
+    border-radius: 8px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+#item-image-hover{
+    border-radius: 8px;
+    background-color: hsla(178, 100%, 50%, 0.534);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+}
+
+
 #item{
     color:  hsla(0, 0%, 100%, 0.87);
 }
@@ -72,7 +95,16 @@ strong{
     color: white;
 }
 
-
+/*hover states*/
+#item-image-hover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#item:hover,strong:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+/*mobile responsive*/
 @media screen and (max-width:480px) {
     section{
         width: 350px;
