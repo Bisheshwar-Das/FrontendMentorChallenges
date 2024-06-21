@@ -87,6 +87,10 @@ button{
 button>img{
     padding: 0 8px;
 }
+button:hover{
+    background-color:hsl(159, 35%, 16%) ;
+    cursor: pointer;
+}
 
 @media screen and (max-width:600px) {
 
