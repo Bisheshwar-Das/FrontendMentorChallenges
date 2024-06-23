@@ -3,6 +3,7 @@
     padding: 0;
 }
 body{
+    margin: 0;
     background-color: hsl(216, 12%, 8%);
     font-family: "Overpass", sans-serif;
     height: 100vh;

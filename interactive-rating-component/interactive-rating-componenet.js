@@ -22,3 +22,12 @@ rating.forEach(ratings=>{
         }
     })
 })
+
+function thankyou(){ 
+    localStorage.setItem("selected-rating",selected_rating);
+    if (selected_rating!==''){
+        window.location.href="thankyou-page.html";
+    }else{
+        alert("please select a rating")
+    }
+}
