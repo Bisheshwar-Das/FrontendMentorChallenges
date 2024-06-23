@@ -19,19 +19,41 @@ const qna=[{question:q1,answer:a1},
     {question:q3,answer:a3},
     {question:q4,answer:a4},
 ]
-var questions=document.getElementById("question");
+
+// function changeicon(){
+//   console.log(document.getElementsByClassName("plus-minus").src)
+//   if(document.getElementsByClassName("plus-minus").src == "faq-accordion-main/assets/images/icon-plus.svg"){
+//     document.getElementsByClassName("plus-minus").src="faq-accordion-main/assets/images/icon-minus.svg";
+//   }else{
+//     document.getElementsByClassName("plus-minus").src="faq-accordion-main/assets/images/icon-plus.svg";
+//   }
+// }
+
 var output=document.getElementById("question-answer");
-console.log(qna.length)
 var html2=''
 for(var i=0;i<qna.length;i++){
-    html2+=`
-            <div id="question-line">
-                <h5 id="question">${qna[i].question}</h5>
-                <button>
-                    <img id="plus-minus" src="faq-accordion-main/assets/images/icon-plus.svg" alt="plus icon">
-                </button>
-            </div>
-            <p id="answer">${qna[i].answer}</p>`;
+    html2+=`<div id="qna">
+                <div id="question-line">
+                    <h5 class="question">${qna[i].question}</h5>                  
+                    <img class="plus-minus"  src="faq-accordion-main/assets/images/icon-plus.svg" alt="plus icon">
+                    <p class="answer">${qna[i].answer}</p>
+                </div>
+            </div>`;
 }
 output.innerHTML=html2;
 
+const containerQs = document.querySelectorAll('.question');
+icona = document.querySelectorAll('plus-minus');
+
+containerQs.forEach(container=>{
+  container.addEventListener("click",()=>{
+    container.nextElementSibling.nextElementSibling.classList.toggle('active');
+    if(container.nextElementSibling.alt=="plus icon"){
+      container.nextElementSibling.src="faq-accordion-main/assets/images/icon-minus.svg";
+      container.nextElementSibling.alt="minus icon";
+    }else{
+      container.nextElementSibling.alt="plus icon";
+      container.nextElementSibling.src="faq-accordion-main/assets/images/icon-plus.svg";
+    }
+  })
+})
