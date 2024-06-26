@@ -7,6 +7,90 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Lexend Deca", sans-serif;
     font-family: "Big Shoulders Display", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: flex-start;
+}
+img{
+    height: 40px;
+    object-fit: contain;
+}
+h1{
+    font-size: 40px;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+p{
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 32px;
+    font-size: 15px;
+}
+button{
+    border: none ;
+    padding: 16px;
+    border-radius: 24px;
+    width: 150px;
+    background-color:hsl(0, 0%, 95%) ;
+    font-size: 16px;
+    font-weight: 600;
+    mix-blend-mode: screen;
+}
+button:hover{
+    border: 1px solid hsl(0, 0%, 95%) ;
+    cursor: pointer;
+    background-color: transparent;
+    mix-blend-mode: normal;
+    color: hsl(0, 0%, 95%);
+}
+.sedans{
+    border-radius: 12px 12px 0 0;
+    background-color: hsl(31, 77%, 52%)
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 12px 12px ;
+}
+
+@media screen and (min-width:600px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    section{
+        flex-direction: row;
+        max-width: 1150px;
+        min-height: 500px;
+    }
+    .options{
+        justify-content: space-between;
+    }
+    .sedans{
+        border-radius: 12px 0  0 12px;
+        background-color: hsl(31, 77%, 52%)
+    }
+    .suvs{
+        background-color: hsl(184, 100%, 22%);
+    }
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 12px 12px 0 ;
+    }
 }
