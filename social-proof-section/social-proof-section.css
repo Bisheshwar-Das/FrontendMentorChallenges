@@ -1,5 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bg-image1{
+    position: fixed;
+    left: 10%;
+    top: 0%;
+}
+#bg-image2{
+    position: fixed;
+    right: 10%;
+    bottom: 0;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    width: 80%;
+    justify-content: space-between;
+}
+#upper-section{
+    display: flex;
+    justify-content: space-between;
+}
+/* Upper left section*/
+#upper-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+}
+#upper-section-left h1{
+    font-size: 52px;
+    color: var(--Very-Dark-Magenta);
+}
+#upper-section-left p{
+    margin: 20px 0;
+    font-size: 20px;
+    color: var(--Dark-Grayish-Magenta);
+}
+
+/* Upper Right section*/
+#upper-section-right{
+    justify-content: center;
+    min-width: 40%;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#upper-section-right>div{
+    align-items: center;
+    width: 400px;
+    display: flex;
+    background-color:var(--Light-Grayish-Magenta) ;
+    padding: 18px 24px;
+    margin: 8px;
+    border-radius: 12px;
+}
+#upper-section-right strong{
+    margin-left: 20px;
+    color: var(--Very-Dark-Magenta);
+}
+.card1{
+    align-self: flex-start;
+}
+.card2{
+    align-self: center;
+    margin: 10px;
+}
+.card3{
+    align-self: flex-end;
+}
+
+#lower-section{
+    display: flex;
+    height: 240px;
+    justify-content: space-around;
+}
+.lower-section-cards{
+    height: 180px;
+    min-width: 240px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 12px;
+    padding: 28px;
+    justify-content: space-around;
+}
+.lower-section-cards>div{
+    display: flex;
+    align-items: center;
+}
+.lower-section-cards img{
+    height: 40px;
+    border-radius: 50%;
+}
+#user-details{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#user-details>h5{
+    color: var(--Light-Grayish-Magenta);
+    padding: 3px 0;
+}
+#user-details>p{
+    padding: 3px 0;
+    color: var(--Soft-Pink);
+}
+#comments{
+    color: var(--Light-Grayish-Magenta);
+}
+
+@media screen and (max-width:900px) {
+    section{
+        width: 90%;
+        margin: 5% 0;
+    }
+    #upper-section-left{
+        width: 40%;
+    }
+    #upper-section-right>div{
+        flex-direction: column;
+        width: 280px;
+    }
+    #upper-section-right strong{
+        padding-top: 5px;
+    }
+    #lower-section{
+        flex-direction: column;
+        height: auto;
+    }
+    .lower-section-cards{
+        width: 90%;
+        max-width: none;
+    }
+}
+@media screen and (max-width:480px) {
+    section{
+        margin: 15%;
+        width:380px;
+    }
+    #upper-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    #upper-section-left{
+        width: 320px;
+    }
+    #upper-section-left h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    #upper-section-left p{
+        text-align: center;
+        font-size: 18px;
+    }
+    #upper-section-right{
+        align-items: center;
+    }
+    .card1,.card3{
+        align-self: center;
+    }
+
 }
